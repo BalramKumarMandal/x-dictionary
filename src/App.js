@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>XDictionary</h1>
+      <h1>Dictionary App</h1>
       <input
         type="text"
         placeholder="Search for a word"
@@ -35,6 +35,7 @@ function App() {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button onClick={handleSearch}>Search</button>
+      <h1>Definition:</h1>
       <p>{result}</p>
     </div>
   );
